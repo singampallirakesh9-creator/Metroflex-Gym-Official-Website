@@ -30,7 +30,9 @@ body{
 
 <!-- Navbar -->
 <nav class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
+    <h1 class="text-2xl font-extrabold text-red-500 tracking-wide">
       METROFLEX GYM
     </h1>
 
@@ -43,14 +45,29 @@ body{
     </div>
 
     <a href="https://wa.me/918688487778"
-       class="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-700 px-5 py-2 rounded-full font-semibold shadow-lg shadow-red-500/40 transition-all duration-300"
+      class="hidden md:inline-block bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-700 px-5 py-2 rounded-full font-semibold shadow-lg shadow-red-500/40 transition-all duration-300">
       Join Now
     </a>
 
+    <button id="mobileMenuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+      class="md:hidden text-3xl text-white px-2 leading-none">
+      ⋮
+    </button>
+
   </div>
 
+  <div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-gray-300">
+    <a href="#" class="hover:text-red-500">Home</a>
+    <a href="#" class="hover:text-red-500">Programs</a>
+    <a href="#" class="hover:text-red-500">Membership</a>
+    <a href="#" class="hover:text-red-500">Gallery</a>
+    <a href="#" class="hover:text-red-500">Contact</a>
+    <a href="https://wa.me/918688487778"
+      class="bg-red-600 text-center px-5 py-2 rounded-full font-semibold mt-2">
+      Join Now
+    </a>
+  </div>
 </nav>
-
 <!-- Hero -->
 <!-- Hero -->
 <section class="relative min-h-screen overflow-hidden">
